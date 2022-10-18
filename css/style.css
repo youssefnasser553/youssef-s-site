@@ -1,0 +1,119 @@
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #777!important;
+    
+}
+nav{
+    position: fixed;
+    opacity: 0.5; ;
+}
+
+.carousel-item{
+    position: relative;
+}
+.carousel-item img{
+    width: 100%;
+    height: 90vh;
+}
+#activeBtn:focus{
+    background-color:rgba(146, 186, 247, 0.3) ;
+    border: rgba(52, 114, 201, 0.3) solid 3px ;
+    color: blue;
+}
+.carousel-caption {
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+    
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+#myLanguage{
+    font-size: 20px;
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 120px;
+background-color: lightblue;
+top: 40px;
+left: -34px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.backImg{
+
+background-attachment: fixed;
+background-size: cover;
+height: 300px;
+}
+.backImg1{
+    background-image: url(../img/خلفيات-كمبيوتر-موقع-محيط-_182048401_-__.jpg);
+}
+
+.card-img-top{
+    width: 90%;
+    height: 300px;
+}
+.card-img-top img{
+    width: 100%;
+    height: 100%;
+}
+.icon-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.icon-img img{
+    
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.myicon{
+    width: 30px;
+    height: 30px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(26, 25, 25);
+}
